@@ -15,9 +15,74 @@
 body {
   background-color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", cursive;
+  font-size: 15px;
+  padding: 6em 2em;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .grid-container {
   max-width: 1024px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  padding: 3em;
+}
+
+.card--bg-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.card--bg-turquoise {
+  background-color: hsl(184, 100%, 22%);
+}
+.card--bg-navy {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card__title {
+  padding: 0.5em 0;
+}
+
+.card__content {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  padding-bottom: 2.5em;
+}
+
+.card__button {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  padding: 1em;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+.turquoise {
+  color: hsl(184, 100%, 22%);
+}
+.navy {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1em;
+  right: 50%;
+  transform: translateX(50%);
 }
