@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  min-height: 100vh;
+}
+
+.grid-container {
+  max-width: 1024px;
+}
