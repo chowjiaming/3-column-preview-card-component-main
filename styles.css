@@ -62,6 +62,12 @@ body {
   padding-bottom: 2.5em;
 }
 
+@media (min-width: 720px) {
+  .card__content {
+    padding-bottom: 8em;
+  }
+}
+
 .card__button {
   background-color: hsla(0, 0%, 100%, 0.75);
   padding: 1em;
